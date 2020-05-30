@@ -1,0 +1,56 @@
+{
+    "name": "reimbursements",
+    "description": "This tool helps convert citibank credit card report to gamechange remimbursement form",
+    "version": "1.0.0",
+    "author": "Adhityan @adhityan",
+    "bin": {
+        "reimbursements": "./bin/run"
+    },
+    "bugs": "https://github.com/adhityan/gc-reimbursements/issues",
+    "dependencies": {
+        "@oclif/command": "^1.6.1",
+        "@oclif/config": "^1.15.1",
+        "@oclif/plugin-help": "^3.0.1",
+        "chalk": "^4.0.0",
+        "moment": "^2.26.0",
+        "moment-timezone": "^0.5.31",
+        "prompts": "^2.3.2",
+        "string-similarity": "^4.0.1",
+        "tslib": "^2.0.0",
+        "xlsx": "^0.16.1"
+    },
+    "devDependencies": {
+        "@oclif/dev-cli": "^1.22.2",
+        "@types/node": "^14.0.6",
+        "@types/prompts": "^2.0.8",
+        "@types/string-similarity": "^3.0.0",
+        "eslint": "^7.1.0",
+        "eslint-config-oclif": "^3.1.0",
+        "eslint-config-oclif-typescript": "^0.1.0",
+        "ts-node": "^8.10.2",
+        "typescript": "^3.9.3"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "files": [
+        "/bin",
+        "/lib"
+    ],
+    "homepage": "https://github.com/adhityan/gc-reimbursements",
+    "keywords": [
+        "oclif"
+    ],
+    "main": "lib/index.js",
+    "oclif": {
+        "bin": "reimbursements"
+    },
+    "repository": "adhityan/gc-reimbursements",
+    "scripts": {
+        "posttest": "eslint . --ext .ts --config .eslintrc",
+        "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
+        "test": "echo NO TESTS",
+        "version": "oclif-dev readme && git add README.md"
+    },
+    "types": "lib/index.d.ts"
+}
