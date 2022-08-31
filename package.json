@@ -13,7 +13,7 @@
         "@oclif/plugin-help": "^3.0.1",
         "chalk": "^4.0.0",
         "moment": "^2.26.0",
-        "moment-timezone": "^0.5.31",
+        "moment-timezone": "^0.5.35",
         "prompts": "^2.3.2",
         "string-similarity": "^4.0.1",
         "tslib": "^2.0.0",
